@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="agents.css">
+</head>
+<body>
+     <header>
+        <div class="true">
+            <div class="logo">
+                <img src="img.png" alt="">
+            </div>
+            <div class="logo1">
+                <h1>Dreams</h1>
+                <h2>Home</h2>
+                <p>Find Your Dream Home.</p>
+            </div>
+            <div class="about1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+           <div class="login">
+    <i class="fa-solid fa-phone"></i>
+    <h2>
+        <a href="tel:+919876543210">+91 9876543210</a>
+    </h2>
+</div>
+
+<div class="sign">
+    <button class="sign1" id="listPropertyBtn">
+        List Your Property
+    </button>
+</div>
+
+<!-- Popup -->
+<div id="propertyPopup" class="property-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup" class="close">&times;</span>
+
+        <h2>List Your Property</h2>
+
+        <input type="text" id="ownerName" placeholder="Your Name">
+
+        <input type="text" id="propertyName" placeholder="Property Name">
+
+        <input type="text" id="propertyLocation" placeholder="Property Location">
+
+        <select id="propertyType">
+            <option value="">Select Property Type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+        </select>
+
+        <button id="submitProperty">
+            Submit Property
+        </button>
+
+        <p id="propertyMessage"></p>
+
+    </div>
+
+</div>
+        </div>
+<section class="team-showcase">
+
+    <div class="team-wrapper">
+
+        <!-- Left Image -->
+
+        <div class="team-photo-area">
+
+            <img src="agent.png" alt="Team">
+
+        </div>
+
+        <!-- Right Content -->
+
+        <div class="team-info-area">
+
+            <span class="team-small-title">
+                FULL SERVICE, TURN-KEY REAL ESTATE
+            </span>
+
+            <h1 class="team-main-title">
+                Exceptional Service,<br>
+                Outstanding Results.
+            </h1>
+
+            <p class="team-description">
+                Trust your new home or investment property to our team
+                of award-winning real estate experts for a picture
+                perfect buying & selling experience where you will
+                experience nothing short of the best.
+            </p>
+
+            <a href="#" class="team-btn">
+                Learn More
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<section class="advisory-banner">
+
+    <div class="advisory-overlay"></div>
+
+    <div class="advisory-content">
+
+        <h2 class="advisory-heading">Expert Advisory Team</h2>
+
+        <p class="advisory-text">
+            Meet Our Experts
+        </p>
+
+    </div>
+
+</section>
+<footer class="lux-footer">
+
+    <div class="lux-container">
+
+        <!-- Logo -->
+        <div class="lux-about">
+
+            <h2 class="lux-logo">
+                🏠 Arvon
+            </h2>
+
+            <h3>
+                Luxury Real Estate Specializing in Exclusive Properties
+            </h3>
+
+            <div class="lux-contact">
+
+                <div>
+                    <h4>CONTACT</h4>
+                    <p>(123) 456-7890</p>
+                    <p>hello@example.com</p>
+                </div>
+
+                <div>
+                    <h4>ADDRESS</h4>
+                    <p>123 Luxury Street</p>
+                    <p>New York, NY 10001</p>
+                </div>
+
+            </div>
+
+            <div class="lux-social">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- Pages -->
+
+        <div class="lux-links">
+
+            <h3>Pages</h3>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+
+        <div class="lux-links">
+
+            <h3>Services</h3>
+
+            <ul>
+                <li><a href="#">Property Listing</a></li>
+                <li><a href="#">Rental Property</a></li>
+                <li><a href="#">Investment Guide</a></li>
+                <li><a href="#">Home Valuation</a></li>
+                <li><a href="#">Consultation</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="lux-bottom">
+
+        <p>© 2026 Luxury Real Estate. All Rights Reserved.</p>
+
+        <p>Designed by YourCompany</p>
+
+    </div>
+
+    <h1 class="lux-watermark">
+        EXCLUSIVE LIVING
+    </h1>
+
+</footer>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</body>
+<script>
+
+const listBtn = document.getElementById("listPropertyBtn");
+const popup = document.getElementById("propertyPopup");
+const closeBtn = document.getElementById("closePopup");
+const submitBtn = document.getElementById("submitProperty");
+
+
+// Open popup
+listBtn.addEventListener("click", function () {
+    popup.style.display = "flex";
+});
+
+
+// Close popup
+closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+});
+
+
+// Submit property
+submitBtn.addEventListener("click", function () {
+
+    const name = document.getElementById("ownerName").value.trim();
+    const property = document.getElementById("propertyName").value.trim();
+    const location = document.getElementById("propertyLocation").value.trim();
+    const type = document.getElementById("propertyType").value;
+
+    const message = document.getElementById("propertyMessage");
+
+
+    if (name === "" || property === "" || location === "" || type === "") {
+
+        message.innerHTML = "⚠️ Please fill all the details.";
+        message.style.color = "red";
+
+        return;
+    }
+
+
+    message.innerHTML = "✅ Property submitted successfully!";
+    message.style.color = "green";
+
+
+    // Clear form
+    document.getElementById("ownerName").value = "";
+    document.getElementById("propertyName").value = "";
+    document.getElementById("propertyLocation").value = "";
+    document.getElementById("propertyType").value = "";
+
+});
+
+</script>
+</html>

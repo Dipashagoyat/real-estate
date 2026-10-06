@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+   <header>
+        <div class="true">
+            <div class="logo">
+                <img src="img.png" alt="">
+            </div>
+            <div class="logo1">
+                <h1>Dreams</h1>
+                <h2>Home</h2>
+                <p>Find Your Dream Home.</p>
+            </div>
+            <div class="about1">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+           <div class="login">
+    <i class="fa-solid fa-phone"></i>
+    <h2>
+        <a href="tel:+919876543210">+91 9876543210</a>
+    </h2>
+</div>
+
+<div class="sign">
+    <button class="sign1" id="listPropertyBtn">
+        List Your Property
+    </button>
+</div>
+
+<!-- Popup -->
+<div id="propertyPopup" class="property-popup">
+
+    <div class="popup-content">
+
+        <span id="closePopup" class="close">&times;</span>
+
+        <h2>List Your Property</h2>
+
+        <input type="text" id="ownerName" placeholder="Your Name">
+
+        <input type="text" id="propertyName" placeholder="Property Name">
+
+        <input type="text" id="propertyLocation" placeholder="Property Location">
+
+        <select id="propertyType">
+            <option value="">Select Property Type</option>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Villa</option>
+        </select>
+
+        <button id="submitProperty">
+            Submit Property
+        </button>
+
+        <p id="propertyMessage"></p>
+
+    </div>
+
+</div>
+        </div>
+    </header>
+<section class="contact-banner">
+
+    <div class="banner-overlay"></div>
+
+    <div class="banner-content">
+
+        <div class="banner-path">
+
+            <a href="#">Home</a>
+
+            <span>></span>
+
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <h1>Contact Us</h1>
+
+        <p>
+            We're here to help you every step of the way. Whether you're
+            interested in buying, selling, or learning more about our
+            properties, we'd love to assist.
+        </p>
+
+    </div>
+
+</section>
+<section class="contact-title-section">
+
+    <div class="contact-title-box">
+
+        <div class="contact-small-title">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>Contact us</span>
+
+        </div>
+
+        <h1>
+            Have questions? ready to help!
+        </h1>
+
+        <p>
+            Looking for your dream home or ready to sell?
+            Our expert team offers personalized guidance
+            and market expertise tailored to you.
+        </p>
+
+    </div>
+
+</section>
+<section class="contact-area">
+
+    <div class="contact-container">
+
+        <!-- Left Side -->
+
+        <div class="contact-details">
+
+            <div class="contact-overlay"></div>
+
+            <div class="contact-content">
+
+                <h2>Contact information</h2>
+
+                <p>
+                    Ready to find your dream home or sell your
+                    property? We're here to help!
+                </p>
+
+                <div class="info-box">
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 0239 0310 1122</span>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@dreamhome.com</span>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Blane Street, Manchester</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Right Side -->
+
+        <div class="contact-form-area">
+
+            <form id="contactForm">
+
+                <div class="input-row">
+
+                    <input 
+                        type="text" 
+                        id="contactName"
+                        placeholder="Name*"
+                    >
+
+                    <input 
+                        type="text" 
+                        id="contactPhone"
+                        placeholder="Phone Number*"
+                    >
+
+                </div>
+
+                <input 
+                    type="email" 
+                    id="contactEmail"
+                    placeholder="Email Address*"
+                >
+
+                <textarea 
+                    id="contactMessage"
+                    placeholder="Write here your message"
+                ></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <p id="contactResult"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="estate-footer">
+    <div class="footer-wrapper">
+
+        <!-- Company Info -->
+        <div class="footer-box company-area">
+
+            <div class="brand-logo">
+                <img src="red.png" alt="">
+            </div>
+
+            <p class="company-text">
+                DreameHomes.com is an initiative by MRA Group world class leader
+                in Real Estates Services. Users can list Residential or Commercial
+                properties for free of charge on our platform.
+            </p>
+
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>
+                    H No:-358 Sector 72A,<br>
+                    Near DPG College, Gate No.2,<br>
+                    Gurgaon Haryana
+                </span>
+            </div>
+
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>9871760198 | 9625101404</span>
+            </div>
+
+            <div class="contact-item">
+                <i class="far fa-envelope"></i>
+                <span>info@dreamehomes.com</span>
+            </div>
+
+        </div>
+
+        <!-- Dream Homes -->
+        <div class="footer-box footer-links">
+
+            <h3>DREAME HOMES</h3>
+
+            <ul>
+                <li><a href="#">Home-Dream Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Submit Property</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box service-links">
+
+            <h3>SERVICES</h3>
+
+            <ul>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">PG / Hostel</a></li>
+                <li><a href="#">Submit Property</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Search Property -->
+        <div class="footer-box property-links">
+
+            <h3>SEARCH PROPERTIES</h3>
+
+            <ul>
+                <li><a href="#">Properties in Gurgaon</a></li>
+                <li><a href="#">Flats in Gurgaon</a></li>
+                <li><a href="#">House for Sale in Gurgaon</a></li>
+                <li><a href="#">Apartments in Gurgaon</a></li>
+                <li><a href="#">1 RK Rent in Gurgaon</a></li>
+                <li><a href="#">1 BHK Rent in Gurgaon</a></li>
+                <li><a href="#">2 BHK Rent in Gurgaon</a></li>
+                <li><a href="#">3 BHK Rent in Gurgaon</a></li>
+                <li><a href="#">Submit Property</a></li>
+            </ul>
+
+        </div>
+
+        <!-- Social -->
+        <div class="footer-box social-area">
+
+            <h3>FOLLOW US</h3>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright-strip">
+        Copyright © 2021 DreameHomes, All Rights Reserved | Developed by Cybill Technology
+    </div>
+
+</footer>
+
+</body>
+<script>
+
+const listBtn = document.getElementById("listPropertyBtn");
+const popup = document.getElementById("propertyPopup");
+const closeBtn = document.getElementById("closePopup");
+const submitBtn = document.getElementById("submitProperty");
+
+
+// Open popup
+listBtn.addEventListener("click", function () {
+    popup.style.display = "flex";
+});
+
+
+// Close popup
+closeBtn.addEventListener("click", function () {
+    popup.style.display = "none";
+});
+
+
+// Submit property
+submitBtn.addEventListener("click", function () {
+
+    const name = document.getElementById("ownerName").value.trim();
+    const property = document.getElementById("propertyName").value.trim();
+    const location = document.getElementById("propertyLocation").value.trim();
+    const type = document.getElementById("propertyType").value;
+
+    const message = document.getElementById("propertyMessage");
+
+
+    if (name === "" || property === "" || location === "" || type === "") {
+
+        message.innerHTML = "⚠️ Please fill all the details.";
+        message.style.color = "red";
+
+        return;
+    }
+
+
+    message.innerHTML = "✅ Property submitted successfully!";
+    message.style.color = "green";
+
+
+    // Clear form
+    document.getElementById("ownerName").value = "";
+    document.getElementById("propertyName").value = "";
+    document.getElementById("propertyLocation").value = "";
+    document.getElementById("propertyType").value = "";
+
+});
+
+</script>
+<script>
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(event) {
+
+    // Page reload ko rokna
+    event.preventDefault();
+
+    // Values lena
+    const name = document.getElementById("contactName").value.trim();
+    const phone = document.getElementById("contactPhone").value.trim();
+    const email = document.getElementById("contactEmail").value.trim();
+    const message = document.getElementById("contactMessage").value.trim();
+
+    const result = document.getElementById("contactResult");
+
+
+    // Empty field check
+    if (
+        name === "" ||
+        phone === "" ||
+        email === "" ||
+        message === ""
+    ) {
+
+        result.innerHTML = "⚠️ Please fill all the fields.";
+        result.style.color = "red";
+
+        return;
+    }
+
+
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailPattern.test(email)) {
+
+        result.innerHTML = "⚠️ Please enter a valid email address.";
+        result.style.color = "red";
+
+        return;
+    }
+
+
+    // Phone validation
+    const phonePattern = /^[0-9]{10,15}$/;
+
+    if (!phonePattern.test(phone.replace(/\s/g, ""))) {
+
+        result.innerHTML = "⚠️ Please enter a valid phone number.";
+        result.style.color = "red";
+
+        return;
+    }
+
+
+    // Success
+    result.innerHTML =
+        "✅ Message sent successfully! We will contact you soon.";
+
+    result.style.color = "green";
+
+
+    // Clear form
+    contactForm.reset();
+
+});
+
+</script>
+</html>
